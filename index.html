@@ -1,16 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Norwood Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacob Norwood</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-        <div> 
+    <!--menu tab-->
+    <header>
+
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landingText">
             <h1>Jacob Norwood</h1>
+            <h6>Jr. Web Designer & Developer</h6>
         </div>
+    </header>
+    <!--About Div-->
+    <section class="about" id="about">
+        <div class="container">
+
+            <div class="aboutDetails">
+                <div class="profileImg">
+                </div>
+                <div class="aboutHead">
+                    <h1>About Myself</h1>
+                    <h6>Education | Intrests | Skills</h6>
+                </div>
+                <p>Student, Dungeonmaster, Coder, list a few of my many skills that i have developed over the past 22
+                    years of becoming a functioning human. I started my coding journey at age 15 when I was gifted a 2ds
+                    with a progam where I started training to make the coolest video game ever. As time went on I
+                    started looking forward towards a career path, knowing that video game designer is every mans dream
+                    I started looking for options to keep me intrested and provide me a livable income. Web design
+                    started </p>
+                <div class="socialMedia">
+
+
+                    <a target="_blank" href="https://www.instagram.com/jacob_norwood/" class="iconLink">
+                        <img class="social1" src="assets/87390.png" alt="">
+                    </a>
+
+
+                    <a target="_blank" href="https://www.linkedin.com/in/jacobshawnnorwood/" class="iconLink">
+                        <img class="social2" src="assets/61109.png">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--portfolio Div-->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="sectionHeading">
+                <h1>Portfolio</h1>
+                <h6>Current and Past Projects</h6>
+            </div>
+            <div class="portfolioItem">
+                <div class="portfolioImg1">
+                    <a href="http://127.0.0.1:5500/projects/PokemonAPI/public/index.html" style="display: block;"
+                        target="_blank">
+                        <img class="projectImg" src="assets/portfolioimg1.PNG"></a>
+                </div>
+                <div class="portfolioDesc">
+                    <h6>API Project with ElevenFifty</h6>
+                    <p>My first go around with APIs and how they are implemented. This project shows a starting point to
+                        me becoming a high end web developer</p>
+                </div>
+                <div class="portfolioImg2">
+                    <img class="projectImg" src="assets/C4_Logo.jpg" alt="">
+                </div>
+                <div class="portfolioDesc">
+                    <h6>Logo for a local DJ</h6>
+                    <p>In the web design world there is a huge wall between a designer and a client. This project was
+                        made to the clients wishes even though this logo would be a nightmare to print on flyers,
+                        T-shirts,or websites. Any employer would see that my values are wholeheartedly with the client's
+                        wishes.</p>
+                </div>
+                <div class="portfolioImg3">
+                    <img class="projectImg" src="assets/cig.png" alt="">
+                </div>
+                <div class="portfolioDesc">
+                    <h6>Art Project in my web design class at J. Everett Light Career Center</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta unde dolorum officiis aperiam
+                        nemo placeat, culpa voluptates. Atque doloribus fuga, id necessitatibus deserunt incidunt porro
+                        corporis sapiente pariatur similique. Quaerat!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact div-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="sectionHeading">
+                <h1>Contact</h1>
+            </div>
+            <form action="https://formspree.io/f/mknppkqj" method="POST">
+                <div class="inputs">
+                    <!-- <label> -->
+                        <label for="name">Name:</label>
+                        <textarea type="text" id="name" name="name" rows="2" cols="100" required></textarea>
+                        <label for="name">Your email:</label>
+                        <textarea type="text" id="emailField" name="email" cols="100" rows="2" required></textarea>
+                    <!-- </label> -->
+                    <label>
+                        Your message:
+                        <br>
+                        <textarea name="message" id="message" cols="100" rows="10"></textarea>
+                    </label>
+
+                    <!-- your other form fields go here -->
+                    <br>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="up" id="up">
+            
+            <a href="index.html" class="nav-link"><i class="fa fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
+
+
+
+<!-- <div class="container">
+            <div class="sectionHeading">
+                <h1>Contact</h1>
+            </div>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" cols="2"  placeholder="Enter your name here" required>
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="email" rows="2" placeholder="Enter your email here" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="100" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </div> -->

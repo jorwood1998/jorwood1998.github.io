@@ -1,3 +1,290 @@
-h1{
-    font-family: Russo -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*Start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url("assets/portfolioback.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+a:hover{
+    color: black;
+    text-shadow: 1px 1px #eee;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+}
+/*End global*/
+
+/*Start reusable*/
+/*End reusable*/
+
+/*Start header*/
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-nav{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #5c050d;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1,0,0,1);
+    opacity: 75%;
+    z-index: 1000;
+}
+
+.nav-list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 0 2rem;
+}
+
+.nav-link{
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+/* .nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top, #4741C3, #0088C8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border: 2px solid #272727; */
+} */
+a.nav-link:hover{
+    color: #272727;
+}
+
+.landingText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.landingText h1{
+    font-size: 15rem;
+    font-family: 'Yellowtail', sans-serif;
+    /* background: linear-gradient(to top, #c9c9c9, #272727); */
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landingText h6{
+    font-size: 3rem;
+    font-weight: 250;
+    font-family: 'Yellowtail', sans-serif;
+    color: #c9c9c9;
+}
+/*End header*/
+
+/*Start about*/
+.aboutDetails{
+    margin-top: 20rem;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.aboutHead{
+    text-align: center;
+    
+    line-height: 2;
+    margin-bottom: 6rem;
+}
+.aboutHead h1{
+    font-size: 10rem;
+    font-family: 'Yellowtail', sans-serif;
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.aboutHead h6{
+    font-size: 4rem;
+    font-family: 'Yellowtail', sans-serif;
+    color: #c9c9c9;
+}
+
+.iconLink{
+    height: 100px;
+    /* width: 10rem; */
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+    /* display: block; */
+}
+
+.social1{
+    width: 150px;
+    padding: 15%;
+    /* justify-content: center; */
+}
+.social2{
+    width: 150px;
+    float: left;
+    padding: 15%;
+    /* justify-content: center; */
+}
+
+/*End about*/
+
+/*Start portfolio*/
+.portfolio .container .sectionHeading h1{
+    font-size: 10rem;
+    margin-bottom: 6rem;
+    margin-top: 25rem;
+    text-transform: uppercase;
+    font-family: 'Yellowtail', sans-serif;
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.portfolio .container .sectionHeading h6{
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    color: #c9c9c9;
+    font-family: 'Yellowtail', sans-serif;
+
+}
+
+.portfolio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+
+}
+.projectImg{
+    width: 75rem;
+    border-style: outset;
+    border-radius: 15px;
+
+}
+.portfolioDesc h6{
+    
+    font-size: 3rem;
+    margin-bottom: 3%;
+    
+}
+
+.portfolioDesc p{
+    font-size: 2rem;
+    margin-bottom: 8%;
+}
+
+/*End portfolio*/
+
+/*Start contact*/
+
+.contact .sectionHeading h1{
+    font-size: 10rem;
+    margin-bottom: 6rem;
+    margin-top: 20rem;
+    font-family: 'Yellowtail', sans-serif;
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10rem;
+
+}
+label{
+    font-size: 3rem;
+    
+    font-family: 'Yellowtail', sans-serif;
+}
+
+button{
+    width: 120px;
+    font-size: 30px;
+    font-family: 'Yellowtail', sans-serif;
+}
+button:hover,
+button:focus{
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+textarea{
+    margin: 10px auto;
+}
+
+/*End contact*/
+
+/*Start footer*/
+.fa{
+    font-size: 150px;
+    margin: 0 auto;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+i:hover,
+i:focus{
+    background: linear-gradient(to top, #c9c9c9, #272727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*End footer*/
