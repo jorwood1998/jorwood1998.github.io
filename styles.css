@@ -287,4 +287,10 @@ i:focus{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.resume{
+    font-size: 60px;
+    padding-top: 40px;
+    font-family: 'Yellowtail', sans-serif;
+    text-decoration: underline;
+}
 /*End footer*/
