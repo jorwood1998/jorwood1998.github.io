@@ -7,14 +7,14 @@
 
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: #eee;
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: url("assets/portfolioback.png") no-repeat center fixed;
+    background: #14141A;
     background-size: cover;
 }
 
@@ -46,19 +46,14 @@ header{
     width: 100%;
     height: 100vh;
 }
-
 .top-nav{
     width: 100%;
-    height: 10vh;
+    height: 9vh;
     position: fixed;
-    background-color: #5c050d;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    transition: all 650ms cubic-bezier(1,0,0,1);
-    opacity: 75%;
     z-index: 1000;
+    background: #14141A;
+    opacity: 80%;
 }
-
 .nav-list{
     list-style: none;
     width: 100%;
@@ -67,24 +62,14 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 li{
     margin: 0 2rem;
 }
-
 .nav-link{
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 4rem;
     padding: 1rem;
 }
-
-/* .nav-link:hover,
-.nav-link:focus{
-    background: linear-gradient(to top, #4741C3, #0088C8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* border: 2px solid #272727; */
-} */
 a.nav-link:hover{
     color: #272727;
 }
@@ -92,28 +77,48 @@ a.nav-link:hover{
 .landingText{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
     z-index: 1;
 }
-
-.landingText h1{
+.landingText h1 {
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
     font-size: 15rem;
-    font-family: 'Yellowtail', sans-serif;
-    /* background: linear-gradient(to top, #c9c9c9, #272727); */
-    background: linear-gradient(to top, #c9c9c9, #272727);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.landingText h6{
-    font-size: 3rem;
-    font-weight: 250;
-    font-family: 'Yellowtail', sans-serif;
-    color: #c9c9c9;
-}
+    color: white;
+    animation: fadeIn linear 3s;
+    -webkit-animation: fadeIn linear 3s;
+    -moz-animation: fadeIn linear 3s;
+    -o-animation: fadeIn linear 3s;
+    -ms-animation: fadeIn linear 3s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 /*End header*/
 
 /*Start about*/
@@ -122,20 +127,24 @@ a.nav-link:hover{
 }
 .about .container{
     display: flex;
+    background: linear-gradient(to top, #14141A, black);
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .aboutHead{
     text-align: center;
-    
     line-height: 2;
     margin-bottom: 6rem;
 }
+.aboutText{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
 .aboutHead h1{
     font-size: 10rem;
-    font-family: 'Yellowtail', sans-serif;
-    background: linear-gradient(to top, #c9c9c9, #272727);
+    font-family: 'Barlow', sans-serif;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -143,33 +152,16 @@ a.nav-link:hover{
 
 .aboutHead h6{
     font-size: 4rem;
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: #c9c9c9;
 }
 
 .iconLink{
     height: 100px;
-    /* width: 10rem; */
-}
-
-.socialMedia{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 50px auto;
-    /* display: block; */
-}
-
-.social1{
-    width: 150px;
-    padding: 15%;
-    /* justify-content: center; */
 }
 .social2{
     width: 150px;
-    float: left;
-    padding: 15%;
-    /* justify-content: center; */
+    height: 150px;
 }
 
 /*End about*/
@@ -180,8 +172,8 @@ a.nav-link:hover{
     margin-bottom: 6rem;
     margin-top: 25rem;
     text-transform: uppercase;
-    font-family: 'Yellowtail', sans-serif;
-    background: linear-gradient(to top, #c9c9c9, #272727);
+    font-family: 'Barlow', sans-serif;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -190,7 +182,7 @@ a.nav-link:hover{
     font-size: 4rem;
     margin-bottom: 6rem;
     color: #c9c9c9;
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
 
 }
 
@@ -219,17 +211,12 @@ a.nav-link:hover{
     font-size: 2rem;
     margin-bottom: 8%;
 }
-
-/*End portfolio*/
-
-/*Start contact*/
-
 .contact .sectionHeading h1{
     font-size: 10rem;
     margin-bottom: 6rem;
     margin-top: 20rem;
-    font-family: 'Yellowtail', sans-serif;
-    background: linear-gradient(to top, #c9c9c9, #272727);
+    font-family: 'Barlow', sans-serif;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -245,19 +232,19 @@ a.nav-link:hover{
 label{
     font-size: 3rem;
     
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 button{
     width: 120px;
     font-size: 30px;
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 button:hover,
 button:focus{
-    background: linear-gradient(to top, #c9c9c9, #272727);
+    background: #c9c9c9;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
 }
 
 .inputs{
@@ -269,10 +256,6 @@ button:focus{
 textarea{
     margin: 10px auto;
 }
-
-/*End contact*/
-
-/*Start footer*/
 .fa{
     font-size: 150px;
     margin: 0 auto;
@@ -290,7 +273,6 @@ i:focus{
 .resume{
     font-size: 60px;
     padding-top: 40px;
-    font-family: 'Yellowtail', sans-serif;
+    font-family: 'Barlow', sans-serif;
     text-decoration: underline;
 }
-/*End footer*/

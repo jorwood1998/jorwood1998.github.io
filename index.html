@@ -6,16 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jacob Norwood</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shippori Antique B1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
+    
+
+    <script src="scripts.js"></script>
     <!--menu tab-->
     <header>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js" integrity="sha512-au5zlskyQcIGWsL+hWwp6NchmTWSK7UF84uGi2Vr+41wT/TE4oGyVvPzdxyZ2+7ms+8W2NfnsrmfcDaVQYekAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VANTA.NET({
+          el: "header",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xe00ff,
+          backgroundColor: 0x0
+        })
+        </script>
 
         <nav class="top-nav">
             <ul class="nav-list">
@@ -26,7 +46,7 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#portfolio" class="nav-link">Work</a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-link">Contact</a>
@@ -34,8 +54,7 @@
             </ul>
         </nav>
         <div class="landingText">
-            <h1>Jacob Norwood</h1>
-            <h6>Jr. Web Designer & Developer</h6>
+            <h1>Hi, I'm Jacob Norwood</h1>
         </div>
     </header>
     <!--About Div-->
@@ -47,23 +66,16 @@
                 </div>
                 <div class="aboutHead">
                     <h1>About Myself</h1>
-                    <h6>Education | Skills</h6>
+                <div id="aboutText">
+                <p>Hello! I'm Jacob Norwood and thanks for checking out my portfolio webpage. Below this text here you can see my achievements since enrolling in my first coding course in highschool. I fell in love with coding after creating my first webpage 6 years ago. The constant problem solving pushes me to grow my skills with every new project. Below this section here you will see some of my past work. Feel free to contact me via the contact section below or emailing me.</p></div>
+
+                <h6>Education | Skills</h6>
+                    <img class="social2" src="assets/WinterCoding-Badge.png">
+                    <img class="social2" src="assets/SD_gold_badge.png">
+                    <img class="social2" src="assets/SD_Blue.png">
+                    <img class="social2" src="assets/MTA-Software_Development_Fundamentals-600x600.png">
+                    </a>
                 </div>
-                <p>Hello! My name is Jacob Norwood and I am currently enrolled in Ivy Tech Community College and ElevenFifty Academy. I have completed a two-year program at J. Everett Light Career Center<br> where I developed skills in web and graphic design. I am studying to get as many certifications that I can to make me an asset in the Salesforce team. My short term goals are to get<br> certifications in cyber security  from Ivy Tech,the Green Badge from ElevenFifty, and to complete at least 5 certifications through the Trailblazer program if accepted.<br> Long term I want to become an expert in at least two fields that I receive certifications in and become a positive addition to the Salesforce community. </p>
-
-                <a href="https://docs.google.com/document/d/197Wv20lNM3sDfeI5o0wd7UCB-lw8d8EUsZXTXiEDYAM/edit?usp=sharing" target="_blank"><h5 class="resume">Resume</h5></a>
-                <div class="socialMedia">
-
-
-                    <a target="_blank" href="https://www.instagram.com/jacob_norwood/" class="iconLink">
-                        <img class="social1" src="assets/87390.png" alt="">
-                    </a>
-
-
-                    <a target="_blank" href="https://www.linkedin.com/in/jacobshawnnorwood/" class="iconLink">
-                        <img class="social2" src="assets/61109.png">
-                    </a>
-
                 </div>
             </div>
 
@@ -76,14 +88,6 @@
                 <h1>Portfolio</h1>
                 <h6>Current and Past Projects</h6>
             </div>
-            <div class="portfolioItem">
-                <div class="portfolioImg3">
-                    <img class="projectImg" src="assets/IMG_5609.JPG" alt="">
-                </div>
-                <div class="portfolioDesc">
-                    <h6>Certificate of technical achievement in my web design class at J. Everett Light Career Center</h6>
-                    <p>Undoubtedly the best part of high school for me was this web design course with Ms. Kelly. Three hours a day for two years honed not only my web design skills, but also graphic design, experience working with clients, and how to effectively time manage projects while working in small teams.</p>
-                </div>
                 <div class="portfolioImg2">
                     <img class="projectImg" src="assets/C4_Logo.jpg" alt="">
                 </div>
@@ -163,20 +167,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <div class="container">
-            <div class="sectionHeading">
-                <h1>Contact</h1>
-            </div>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" cols="2"  placeholder="Enter your name here" required>
-                <label for="Email">Email</label>
-                <input type="email" id="email" name="email" rows="2" placeholder="Enter your email here" required>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="100" rows="10"></textarea>
-                <input type="submit" value="submit">
-            </form>
-        </div> -->
